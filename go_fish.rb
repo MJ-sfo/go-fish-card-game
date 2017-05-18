@@ -1,9 +1,9 @@
 class PlayingCard
-  attr_reader :rank, :suit
+  attr_reader :rank, :suit, :card
   def initialize(args)
-    @card
     @rank = args[:rank]
     @suit = args[:suit]
+    @face = @rank + @suit  #???????
   end
 end
 
