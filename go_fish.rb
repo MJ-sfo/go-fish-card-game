@@ -1,6 +1,20 @@
 class PlayingCard
-  # initialize
+  attr_accessor :hash_input
+  def initialize(hash_input)
+    @card
+  end
+
+  def rank
+  end
+  def suit
+  end
+  def face
+  end
+  def to_s
+  end
+
 end
+p PlayingCard.new
 
 class CardDeck
   # initialize

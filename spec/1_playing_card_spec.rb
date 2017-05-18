@@ -2,7 +2,10 @@
 # TO RUN YOUR TESTS TYPE: `rspec spec/1_playing_card_spec.rb`
 
 # require "./solution/go_fish.rb"   # use this line to see passing tests
-require "./go_fish.rb"              # use this line to test your code
+p "started rspec"
+require "./go_fish"              # use this line to test your code
+#ONLY ONE DOT IN ./go_fish - works through '.rspec'file parallel to go_fish FILE
+#DON'T END WITH '.rb' - i guess rspec doesn't need it
 
 ######################
 #### Playing Card ####
@@ -20,7 +23,7 @@ RSpec.describe PlayingCard, :type => :model do
     describe "#initialize" do
       it "accepts a single argument (MAKE THIS ARGUMENT A HASH!)" do
         expect{ PlayingCard.new }.to raise_error(ArgumentError)
-        expect{ PlayingCard.new(Hash.new) }.not_to raise_error
+        expect{ PlayingCard.new({rank:'2',suit:'H'}) }.not_to raise_error
         expect { @card }.not_to raise_error
       end
       it "accesses the hash for keys :rank and :suit (and assigns them to an instance variable!)" do
