@@ -10,13 +10,16 @@ class PlayingCard
   end
 
   def to_s
-    @rank + @suit 
+    @rank + @suit
   end
 end
 
 class CardDeck
-  def initialize
-    @card
+  attr_reader :shuf
+
+  def initialize (shuf=true)
+    @cards
+    @shuf = shuf
   end
 end
 
