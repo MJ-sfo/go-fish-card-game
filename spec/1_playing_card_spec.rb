@@ -4,6 +4,7 @@
 # require "./solution/go_fish.rb"   # use this line to see passing tests
 p "started rspec"
 require "./go_fish"              # use this line to test your code
+# require "./solution/go_fish"
 #ONLY ONE DOT IN ./go_fish - works through '.rspec'file parallel to go_fish FILE
 #DON'T END WITH '.rb' - i guess rspec doesn't need it
 

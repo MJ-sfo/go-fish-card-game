@@ -1,23 +1,16 @@
 class PlayingCard
-  attr_accessor :hash_input
-  def initialize(hash_input)
+  attr_reader :rank, :suit
+  def initialize(args)
     @card
+    @rank = args[:rank]
+    @suit = args[:suit]
   end
-
-  def rank
-  end
-  def suit
-  end
-  def face
-  end
-  def to_s
-  end
-
 end
-p PlayingCard.new
 
 class CardDeck
-  # initialize
+  def initialize
+    @card
+  end
 end
 
 class HandOfCards
